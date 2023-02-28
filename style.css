@@ -57,6 +57,13 @@
   font-size: max(min(1.3vw, 1.8rem), 1rem);
   text-align: center;
   padding-bottom: 60px;
+  cursor: pointer;
+}
+
+.suffering {
+  font-size: max(min(1.3vw, 1.8rem), 1rem);
+  text-align: center;
+  padding-bottom: 60px;
 }
 
 @keyframes horizontal {
@@ -64,7 +71,7 @@
     left: 0%;
   }
   to {
-    left: calc(100%);
+    left: 100%;
   }
 }
 
@@ -73,7 +80,7 @@
     top: 0%;
   }
   to {
-    top: calc(100%);
+    top: 100%;
   }
 }
 
