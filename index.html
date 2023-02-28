@@ -10,8 +10,12 @@
     <img id="dvd" class="dvd" src="public/dvdlogo.svg" />
 
     <div class="bodyCont">
-      <div class="bodyTxt">
+      <div class="bodyTxt" id="body">
         <div class="title">Página Retro</div>
+        <div onclick="loadAjax()" class="pain">AJAX (GATITO LLORANDO)</div>
+        <div id="ajax" class="pain"></div>
+        <div onclick="loadJQuery()" class="pain">JQuery</div>
+        <div id="jquery" class="pain"></div>
       </div>
     </div>
 
@@ -20,5 +24,6 @@
     </video>
 
     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </body>
 </html>
