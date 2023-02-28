@@ -1,0 +1,83 @@
+@font-face {
+  font-family: Comic Sans MF;
+  src: url("public/ComicSans.ttf");
+}
+
+.limits {
+  width: 100%;
+  height: 100%;
+}
+
+.dvd {
+  height: 40px;
+  position: absolute;
+  animation-name: horizontal, vertical;
+  animation-duration: 6.282s, 2.828s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  padding: 10px;
+  z-index: 99;
+}
+
+.bgVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.bodyCont {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.bodyTxt {
+  font-family: "Comic Sans MF" !important;
+  background-color: rgba(255, 255, 255, 0.644);
+  height: 80%;
+  width: 70%;
+}
+
+.title {
+  font-weight: 1000;
+  font-size: max(min(2.7vw, 3rem), 2rem);
+  text-align: center;
+  padding: 20px;
+}
+
+@keyframes horizontal {
+  from {
+    left: 0%;
+  }
+  to {
+    left: calc(100%);
+  }
+}
+
+@keyframes vertical {
+  from {
+    top: 0%;
+  }
+  to {
+    top: calc(100%);
+  }
+}
+
+@keyframes color {
+  0% {
+    background-color: blue;
+  }
+  99% {
+    background-color: blue;
+  }
+  100% {
+    background-color: aqua;
+  }
+}
